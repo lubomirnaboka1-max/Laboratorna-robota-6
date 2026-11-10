@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Демонстраційна HTML-форма запису до ветеринара.">
+  <meta name="author" content="Студент">
+  <title>Запис на прийом — Друзі Тварин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><h1>🐾 Друзі Тварин</h1><p>Навчальний сайт ветеринарної клініки</p><nav aria-label="Головне меню"><ul><li><a href="index.html">Головна</a></li><li><a href="main_2.html">Про нас</a></li><li><a href="services.html">Послуги та ціни</a></li><li><a href="recording.html">Записатися</a></li></ul></nav></div></header>
+<div class="wrap layout"><main><section class="panel"><h2>Запис на прийом</h2><p>Це навчальна форма. Вона не надсилає дані на сервер.</p><form onsubmit="event.preventDefault(); document.getElementById('result').textContent='Приклад форми заповнено. Дані нікуди не надіслано.';"><label for="person">Ваше ім’я</label><input id="person" name="person" type="text" required placeholder="Введіть ім’я"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" required placeholder="Номер телефону"><label for="animal">Вид тварини</label><select id="animal" name="animal"><option>Кіт</option><option>Собака</option><option>Інша тварина</option></select><label for="date">Бажана дата</label><input id="date" name="date" type="date"><label for="comment">Коментар</label><textarea id="comment" name="comment" rows="4" placeholder="Ваш коментар"></textarea><button type="submit">Перевірити форму</button><p id="result" role="status"></p></form><a href="index.html">← Назад на головну</a></section></main><aside><h2>Корисні посилання</h2><ol><li><a href="services.html">Переглянути послуги</a></li><li><a href="recording.html">Запис на прийом</a></li><li><a href="main_2.html">Про клініку</a></li></ol></aside></div>
+<footer><p>© 2026 Ветклініка «Друзі Тварин» — навчальний сайт</p><p><a href="https://www.instagram.com/">Instagram</a> · <a href="https://www.facebook.com/">Facebook</a></p></footer>
+</body>
+</html>
